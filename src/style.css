@@ -1,0 +1,39 @@
+.info--title {
+	font-size: 2.1rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+.info--txt {
+	color: rgba(0, 0, 0, 0.66);
+}
+
+input[type=text],[type=number] {
+	display: block;
+	margin-top: .5rem;
+	padding: 1rem;
+	border: 1px solid gainsboro;
+	border-radius: 6px;
+	width: 100%;
+}
+
+form span {
+	color: darkgray;
+	font-size: .8rem;
+}
+
+#quantidadeRipas {
+	padding: 1rem;
+	font-size: 1.3rem;
+	color: green;
+	background: aquamarine;
+	margin: 1rem 0;
+	border-radius: 6px;
+	display: none;
+}
+
+code {
+	background: rgba(0, 0, 0, 0.03);
+	display: block;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	
+	<!-- style -->
+	<link rel="stylesheet" href="src/style.css">
+
+	<title>Calculo de Ripas</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="col-md-6 my-5 mx-auto">
+
+			<div class="info mb-4">
+				<h2 class="info--title">Calculo de quantidade de Ripas</h2>
+				<p class="info--text">
+					Uma forma facil de calcular a quantidade necessaria de ripas para montar em uma parede, o calculo é feito da seguinte maneira: 
+				</p>
+				<code>
+					largura da parede / (largura da ripa + espaço entre ripas)
+				</code>
+
+			</div>
+			
+			<form action="" onsubmit="return ripas()" autocomplete="off" class="d-grid">
+				
+				<label for="largura-parede">Largura da Parede <span>(em cm)</span></label>
+				<input name="largura-parede" id="larguraParede" type="number" min="1" placeholder="Ex.: 130" required>
+				<span class="mb-3">A largura da parede refere-se a area onde as ripas serão aplicadas.</span>
+				
+				<label for="largura-ripa">Largura da Ripa <span>(em cm)</span></label>
+				<input class="mb-3" name="largura-ripa" id="larguraRipa" type="number" min="1" placeholder="Ex.: 5" required>
+
+				<label for="gap">Espaço entre ripas <span>(em cm)</span></label>
+				<input class="mb-3" name="gap" id="gap" type="number" min="0" placeholder="Ex.: 2" required>
+
+				<button type="submit" class="btn btn-outline-warning">Calcular</button>
+
+				<p id="quantidadeRipas"></p>
+
+			</form>
+
+			<div class="exemplo mt-3">
+				<img src="src/exemplo.png" alt="imagem de exemplo" width="100%" height="auto">
+			</div>
+
+		</div><!-- /col -->
+	</div><!-- /container -->
+
+
+	<!-- scripts -->
+	<script src="src/calculo.js"></script>
+
+</body>
+</html>
